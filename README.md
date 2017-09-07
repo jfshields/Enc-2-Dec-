@@ -2,7 +2,7 @@
 Deep learning for unsecured lending payment behaviour prediction including RNN-2-MLP Enc-2-Dec, Enc-2-Dec+
 
 Enc-2-Dec+
-The Encoder-2-Decoder Plus (Enc-2-Dec+) is a two component sequence-to-sequence Deep Learning model comprised of an ‘encoder’ and a ‘decoder’. A full technical report can be provided on request.
+The Encoder-2-Decoder Plus (Enc-2-Dec+) is a two component sequence-to-sequence Deep Learning model comprised of an ‘encoder’ and a ‘decoder’.
 
 Each component performs a separate task. The encoder is RNN with two recursive elements, as seen in LSTM cells. It is stacked to a depth of five layers. The encoder receives the input sequence and converts it into a fixed length vector. This is passed to the decoder as the input to the first time-step. Additional connections are made with the final hidden and continuous states of the decoder to the first hidden and continuous states of the encoder.
 
@@ -13,3 +13,5 @@ Enc-2-Dec+ model was designed to allow maximum information to pass from the inpu
 The attention connections provide a link from each of the encoder outputs states to each of the first layer of each of the time-steps. This was done by applying a linear transformation with a tanh activation function. This was combined with the input to the each time-step of the bottom layer.
 
 Actual value sampled training was used whereby in the decoder, actual previous values where used as the input to the time-step during training.
+
+A full technical report can be provided on request.
