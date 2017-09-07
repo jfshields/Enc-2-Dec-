@@ -15,13 +15,13 @@ from sklearn.utils import shuffle
 from scipy import interp, arange, exp
 
 def data_import():
-    df_sub1 = pd.read_csv('/home/james.shields/Weekly_Chain_2017-06-29_1.csv')
-    df_sub2 = pd.read_csv('/home/james.shields/Weekly_Chain_2017-06-29_2.csv')
-    df_sub3 = pd.read_csv('/home/james.shields/Weekly_Chain_2017-06-29_3.csv')
-    df_sub4 = pd.read_csv('/home/james.shields/Weekly_Chain_2017-06-29_4.csv')
+    df_sub1 = pd.read_csv('/home/#/Weekly_Chain_2017-06-29_1.csv')
+    df_sub2 = pd.read_csv('/home/#/Weekly_Chain_2017-06-29_2.csv')
+    df_sub3 = pd.read_csv('/home/#/Weekly_Chain_2017-06-29_3.csv')
+    df_sub4 = pd.read_csv('/home/#/Weekly_Chain_2017-06-29_4.csv')
     print('Length 1: %s, 2: %s, 3: %s, 4: %s' % (len(df_sub1), len(df_sub2), len(df_sub3), len(df_sub4)))
     
-    df_feat = pd.read_csv('/home/james.shields/LoanCust_feat2.csv')
+    df_feat = pd.read_csv('/home/#/LoanCust_feat2.csv')
 
     df_all= df_sub1.append(df_sub2, ignore_index=True)
     df_all= df_all.append(df_sub3, ignore_index=True)
